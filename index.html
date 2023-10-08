@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		   html,body{
+		        display:flex;
+		        flex-direction: column;
+		        height:100%;
+		    }
+		    div{
+		        flex:1;
+		        text-align: center;
+		    }
+		</style>
+	</head>
+
+	<body>
+		<div>
+		    <button onclick="addColor()">Click Me to Add a Color!</button>
+		</div>
+		<script>
+                function addColor(){
+                    var div = document.createElement("div");
+                    var Color = prompt("Add color");
+                
+
+                    div.setAttribute("style", "background-color: " + Color);
+                    document.body.appendChild(div);
+
+                }
+		</script>
+	</body>
+</html>
